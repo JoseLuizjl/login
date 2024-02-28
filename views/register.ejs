@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Registro</title>
+  <link rel="website icon" type="png" href="image.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="/register.css">'
+</head>
+<body>
+
+
+<div class="container">
+    <h2 class="title"> Create account </h2>
+    <form action="/register" method="POST">
+
+        <div class="inputContainer">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" name="username" class="text" autocomplete="off" required>
+        </div>
+        <span>User</span>
+
+        <br>
+
+        <div class="inputContainer">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" class="text" name="email" required>
+        </div>
+        <span>Email</span>
+
+        <br>
+
+        <div class="inputContainer">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" name="password" class="text" required>
+        </div>
+        <span>Password</span>
+
+        <br>
+
+        <button class="signin" type="submit">Login</button>
+
+        <hr>
+
+        <p class="alreadyAcc">Already have an account?<a  href="/login">Login</a></p>
+
+    </form>
+</div>
+
+      <% if (message) { %>
+        <p class="fail"><%= message %></p>
+      <% } %>
+             
+      `);
+    }
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

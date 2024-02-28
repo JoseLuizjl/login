@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="/login.css">'
+  <link rel="website icon" type="png" href="image.png">
+</head>
+<body>
+    <div class="container">
+    <h2 class="title"> Login </h2>
+    <form action="/login" method="POST">
+
+        <div class="inputContainer">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" name="email" class="inputStyle" required>
+        </div>
+        <span>Email</span>
+
+        <br>
+
+        <div class="inputContainer">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" name="password" class="inputStyle" required>
+        </div>
+        <span>Password</span>
+
+        <br>
+
+        <button class="signin" type="submit">Login</button>
+
+        <hr>
+
+        <p class="alreadyAcc">Don't have an account?<a href="/register">Create</a></p>
+
+    </form>
+</div>
+
+  <% if (message) { %>
+    <p class="fail"><%= message %></p>
+  <% } %>
+  <script src="app.js"></script>
+</body>
+</html>

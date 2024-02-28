@@ -1,0 +1,200 @@
+.container {
+  max-width: 600px; 
+  width: 470px;
+  height: 620px;
+  margin: 10% auto 8%; 
+  padding: 40px;
+  box-sizing: border-box;
+  background: #222831;
+  box-shadow: 1px 1px 10px 1px #000000, 8px 8px 0px 0px #8193a8, 12px 12px 10px 0px #000000;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  left: 0;
+  top: 10%;
+}
+
+body, 
+.signin {
+  background-color: #d3d3d3;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+form {
+  padding-top: 80px;
+}
+
+.title {
+  border-bottom: 2px solid #1161ed;
+}
+
+h2 {
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+}
+
+h2:first-child {
+  padding-left: 0px;
+}
+
+span {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.4; 
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  transition: all 0.5s ease-in-out;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer i {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.text {
+  border: none;
+  width: 410px;
+  padding: 12px 40px 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  text-indent: 13px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+  overflow: hidden;
+  margin-top: 15px;
+  transition: all 0.2s ease-in-out;
+  cursor: text;
+}
+
+.text:focus {
+  outline: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.text:focus + span {
+  opacity: 0.6;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+input {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.fa-envelope {
+  margin-top: 1.5px;
+}
+
+h2, 
+span {
+  margin-left: 20px;
+}
+
+label {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.signin {
+  background: linear-gradient(to bottom, #56CCF2, #2F80ED);
+  color: #222831;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15.5px;
+}
+
+.signin:hover {
+  background: #3FA9F5;
+  box-shadow: 0px 4px 35px -5px #3FA9F5;
+  cursor: pointer;
+}
+
+.signin:focus {
+  outline: none;
+}
+
+hr {
+position: relative;
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+hr {
+  position: absolute;
+  bottom: 45px;
+  width: 84%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.alreadyAcc {
+  text-align: center;
+  display: block;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  position: absolute;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.alreadyAcc a {
+  text-decoration: none;
+}
+
+a {
+  margin-left: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15.5px;
+  font-weight: bold;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+  -webkit-text-fill-color: whitesmoke !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.1)inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.fail {
+    position: absolute;
+    top: 605px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+}
